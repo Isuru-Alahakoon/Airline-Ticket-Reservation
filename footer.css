@@ -1,0 +1,218 @@
+/* ============================================
+   Skyticket – Professional footer
+   ============================================ */
+
+.footer {
+  margin-top: auto;
+  background: #0c4a6e;
+  color: #bae6fd;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.footer_inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+/* ----- Top section: brand + columns ----- */
+.footer_top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(186, 230, 253, 0.2);
+}
+
+.footer_brand {
+  max-width: 280px;
+}
+
+.footer_logo_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.footer_logo_link:hover {
+  opacity: 0.9;
+}
+
+.footer_logo_img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.footer_logo_text {
+  letter-spacing: -0.02em;
+}
+
+.footer_tagline {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #bae6fd;
+  margin: 0;
+}
+
+.footer_columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer_col_title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer_links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer_links a {
+  font-size: 0.9375rem;
+  color: #bae6fd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer_links a {
+  transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.footer_links a:hover {
+  color: #fff;
+}
+
+/* ----- Bottom section: legal + social ----- */
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.footer_legal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.footer_copyright {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #7dd3fc;
+}
+
+.footer_legal_links a {
+  font-size: 0.875rem;
+  color: #bae6fd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer_legal_links a:hover {
+  color: #fff;
+}
+
+.footer_dot {
+  color: #7dd3fc;
+  font-weight: 600;
+  user-select: none;
+}
+
+.footer_social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer_social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1), transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.footer_social_link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.footer_social_link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 900px) {
+  .footer_top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer_brand {
+    max-width: none;
+  }
+
+  .footer_columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_inner {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .footer_top {
+    padding-bottom: 2rem;
+  }
+
+  .footer_columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+  }
+
+  .footer_legal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_social {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

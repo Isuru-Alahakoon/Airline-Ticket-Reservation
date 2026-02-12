@@ -1,0 +1,235 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container for max-width layout */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+
+    padding: 80px;
+    gap: 20px;
+    position: absolute;
+    margin-bottom: 30px;
+}
+
+
+/* Payment portal section */
+.payment-portal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 20px;
+}
+
+.payment-portal h2 {
+    margin-bottom: 20px;
+}
+
+/* Payment types and card details using grid */
+.payment-type,
+.card-details {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Small text */
+.small {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Action buttons in a grid layout */
+.action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.pay-button, .cancel-button {
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pay-button {
+    background-color: #28a745;
+}
+
+.pay-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+/* footer css  */
+.itemm{
+    background-color: rgb(19, 65, 80); 
+    padding: 15px;
+     /* border: 1px solid blue;  */
+  }
+  
+  .ii2{
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+  }
+  
+  .ii1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  
+  .dd{
+    background-color: rgb(37, 37, 72); 
+    padding: 15px;
+    /* border: 1px solid blue; */
+  }
+  
+  .dd2 , .dd4, .dd6{
+    width: 300px;
+  }
+  
+  ul{
+    margin-left: 30px;
+  }
+  
+  .pp1{
+    text-align: center;
+  }
+  
+  
+  .kk a{
+    background-color: rgb(37, 37, 72);
+    color: white;
+  }
+  
+  .cc{
+    background-color: rgb(37, 37, 72);
+  }
+  
+  .ii2 {
+    background-color: rgb(37, 37, 72);
+  }
+  
+  .ii2{
+    padding-bottom: 0;
+  }
+  
+  
+  .mediaa img{
+  
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .ss img{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .mediaa img:active{
+  
+    transform: scale(0.9);
+  }
+  
+  
+  .ii5{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(37, 37, 72);
+  }
+  .ii4 , .ii3{
+    background-color: rgb(37, 37, 72);
+    /* border: 1px solid black; */
+    padding: 8px;
+  }
+  
+  /* .i3{
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .mediaa{
+    /* background-color: yellow; */
+    height: 30px;
+    border-radius: 20px;
+  }
+  
+  .ii3{
+    grid-column-start: 1 ;
+    grid-column-end: 7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 40px;
+  }
+  
+  .ii4{
+    grid-column-start: 7 ;
+    grid-column-end: 8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pp1, .topicc ,.dd , .ii5{
+    color: white;
+  }
+
+  .footerr{
+    position: absolute;
+    margin-top: 800px;
+  }

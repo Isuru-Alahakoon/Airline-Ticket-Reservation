@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background: linear-gradient(to bottom,#009575 , rgb(211, 232, 239));
+}
+
+.container{
+  
+    
+    height: 100vh;
+  
+}
+
+.content table{
+  width: 80%;
+}
+
+table th {
+  height: 50px;
+  background-color: rgb(174, 174, 174);
+  /* border: 1px solid lightblue; */
+}
+
+table td{
+  height: 50px;
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid lightblue; */
+
+}
+table tbody tr td {
+text-align: center;
+}
+
+table tbody tr td a{
+  /* background-color: rgb(0, 116, 205); */
+  color: aliceblue;
+ padding: 7px;
+  
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.477);
+}
+
+.del{
+  background-color: red;
+}
+
+.up{
+  background-color: green;
+}
+
+.content{
+  /* background-color: lightcoral; */
+  padding: 20px;
+}
+
+.add a{
+  background-color: rgb(0, 47, 83);
+  color: aliceblue;
+  width: 145px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.477);
+
+}
+
+
+
+.tablee table{
+  /* background-color: burlywood; */
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.477);
+}
+
+.add{
+  width: 150px;
+  height: 50px;
+  /* background-color: rgb(226, 252, 26); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

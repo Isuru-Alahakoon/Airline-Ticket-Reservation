@@ -1,0 +1,190 @@
+/* ============================================
+   Skyticket – Admin login page (professional)
+   ============================================ */
+
+:root {
+  --color-bg: #f1f3f4;
+  --color-surface: #ffffff;
+  --color-primary: #0369a1;
+  --color-primary-dark: #075985;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --radius: 12px;
+  --radius-lg: 16px;
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  --transition: 0.25s var(--ease-out);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main {
+  flex: 1;
+}
+
+.adminlogin-page {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 64px);
+}
+
+.adminlogin-page_inner {
+  width: 100%;
+  max-width: 420px;
+  padding: 0 1.5rem;
+}
+
+.adminlogin-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 2.5rem 2rem 2rem;
+}
+
+.adminlogin-header {
+  margin-bottom: 1.75rem;
+}
+
+.adminlogin-hint {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.adminlogin-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.adminlogin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.adminlogin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.adminlogin-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.adminlogin-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.adminlogin-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.adminlogin-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.12);
+}
+
+.adminlogin-row {
+  margin-top: -0.25rem;
+}
+
+.adminlogin-forgot {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.adminlogin-forgot:hover {
+  color: var(--color-primary-dark);
+}
+
+.adminlogin-btn {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform 0.2s var(--ease-out);
+  text-align: center;
+  text-decoration: none;
+}
+
+.adminlogin-btn_primary {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.adminlogin-btn_primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.adminlogin-back {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.adminlogin-back_link {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.adminlogin-back_link:hover {
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 480px) {
+  .adminlogin-page_inner {
+    padding: 0 1rem;
+  }
+
+  .adminlogin-card {
+    padding: 1.75rem 1.5rem 1.5rem;
+  }
+
+  .adminlogin-title {
+    font-size: 1.5rem;
+  }
+}

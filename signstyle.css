@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+
+    background: linear-gradient(to bottom, rgb(195, 195, 195) , white);
+}
+
+.index_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+
+}
+
+.index_content{
+
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: rgba(255, 255, 255, 0.753);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.username{
+    grid-column: 1/-1;
+}
+
+.email{
+
+    grid-column: 1/-1;
+}
+
+.pass{
+
+    grid-column: 1/-1;
+}
+
+.conpass{
+    grid-column: 1/-1;
+
+}
+
+.address{
+    grid-column: 1/-1;
+
+}
+
+.member{
+
+    grid-column: 1/-1;
+}
+
+.mobile{
+
+    grid-column: 1/-1;
+}
+
+.code{
+    grid-column: 1/-1;
+}
+
+.item{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.item input{
+
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 209, 209);
+    font-size: 17px;
+}
+
+.item input:focus{
+
+    border: 1px solid rgb(134, 198, 255);
+    box-shadow: 0 0 3px rgb(134, 198, 255);
+}
+
+.item select{
+
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(209, 209, 209);
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: rgb(94, 94, 94);
+}
+
+.item select:focus{
+    border: 1px solid rgb(134, 198, 255);
+    box-shadow: 0 0 3px rgb(134, 198, 255);
+
+}
+
+
+.reg_btn{
+
+    grid-column: 1/-1;
+}
+
+.reg_btn button{
+
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgb(0,65,122);
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.reg_btn button:hover{
+
+    background-color: rgb(0, 89, 168);
+}
+
+.member::-webkit-inner-spin-button{
+
+    -webkit-appearance: none;
+}
+
+.topic{
+    text-align: center;
+    color: white;
+}
+.topic h3{
+    margin-top: 20px;
+}
+
+.topic h2{
+    margin-top: 20px;
+}
+
+body{
+
+    background-image: url('images/airline2.jpg');
+    background-position: center;
+    background-size: cover;
+   
+}

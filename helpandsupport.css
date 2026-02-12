@@ -1,0 +1,290 @@
+/* ============================================
+   Skyticket – Help & Support page (professional)
+   ============================================ */
+
+:root {
+  --color-bg: #f0f9ff;
+  --color-surface: #ffffff;
+  --color-primary: #0369a1;
+  --color-primary-dark: #075985;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e0f2fe;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --radius: 16px;
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  --transition: 0.25s var(--ease-out);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main {
+  flex: 1;
+}
+
+.support-page {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 7rem; /* nav height + gap */
+  padding-bottom: 2rem;
+}
+
+.support-page_inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ----- Header ----- */
+.support-header {
+  margin-bottom: 2rem;
+}
+
+.support-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.support-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* ----- Section common ----- */
+.support-section {
+  margin-bottom: 2rem;
+}
+
+.support-section_title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+/* ----- FAQ ----- */
+.support-faq {
+  margin-bottom: 2.5rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02);
+  transition: box-shadow var(--transition);
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  border: none;
+  background: none;
+  width: 100%;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: var(--color-primary);
+}
+
+.faq-toggle {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  padding: 0 1.25rem 1.25rem;
+  padding-top: 0;
+  margin: 0;
+  border-top: 1px solid var(--color-border);
+  margin-top: -1px;
+  padding-top: 0.75rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.faq-answer:first-of-type {
+  margin-top: 0;
+}
+
+/* ----- Contact form ----- */
+.support-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+}
+
+.support-form_lead {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.contact-form textarea,
+.contact-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form textarea::placeholder,
+.contact-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.15);
+}
+
+.support-submit {
+  margin-top: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.support-submit {
+  transition: background var(--transition), transform 0.2s var(--ease-out);
+}
+
+.support-submit:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* ----- Contact info ----- */
+.support-contact {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+}
+
+.support-contact_lead {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.support-contact_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.support-contact_list li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.support-contact_list li:last-child {
+  border-bottom: none;
+}
+
+.support-contact_list strong {
+  display: inline-block;
+  min-width: 6rem;
+  color: var(--color-primary);
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 640px) {
+  .support-page_inner {
+    padding: 0 1rem;
+  }
+
+  .support-title {
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .support-form,
+  .support-contact {
+    padding: 1.25rem 1.5rem;
+  }
+}

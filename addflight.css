@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .container{
+    background-color: lightgrey;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .content{
+    background-color: rgb(197, 139, 139);
+    padding: 20px;
+    border: 1px solid black;
+  }
+  

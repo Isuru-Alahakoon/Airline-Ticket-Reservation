@@ -1,0 +1,256 @@
+/* ============================================
+   Skyticket – My Account page (professional)
+   ============================================ */
+
+:root {
+  --color-bg: #f0f9ff;
+  --color-surface: #ffffff;
+  --color-primary: #0369a1;
+  --color-primary-dark: #075985;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e0f2fe;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  --radius: 12px;
+  --radius-lg: 16px;
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  --transition: 0.25s var(--ease-out);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main {
+  flex: 1;
+}
+
+.account-page {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+.account-page_inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.account-header {
+  margin-bottom: 1.75rem;
+}
+
+.account-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.account-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Profile card */
+.account-profile-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.account-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.account-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+}
+
+.account-profile_info {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-membership {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.account-membership strong {
+  color: var(--color-text);
+}
+
+.account-profile_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Section */
+.account-section {
+  margin-bottom: 1.5rem;
+}
+
+.account-section_title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.account-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1.75rem;
+  transition: box-shadow var(--transition);
+}
+
+.account-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Form fields */
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.account-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.account-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.account-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.account-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.12);
+}
+
+/* Password section */
+.account-password {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.account-password .account-btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+/* Bookings */
+.account-bookings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.account-bookings .account-btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Buttons */
+.account-btn {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), transform 0.2s var(--ease-out), border-color var(--transition);
+}
+
+.account-btn_primary {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.account-btn_primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.account-btn_secondary {
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.account-btn_secondary:hover {
+  background: rgba(3, 105, 161, 0.06);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .account-page_inner {
+    padding: 0 1rem;
+  }
+
+  .account-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .account-profile_actions {
+    justify-content: center;
+  }
+
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .account-title {
+    font-size: 1.5rem;
+  }
+}

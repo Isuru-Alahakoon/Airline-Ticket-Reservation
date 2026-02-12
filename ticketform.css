@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .container{
+    background-color:rgb(66, 108, 176);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .content{
+    background-color:rgb(89, 184, 165);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 350px;;
+
+  }
+  
+  input{
+
+    border-radius: 10px;
+    background-color:white;
+    height: 20px;
+    width: 250px;
+    padding: 20px;
+
+
+  }
+
+  button {
+
+    text-decoration: none;
+    background-color: rgb(5, 56, 67);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }

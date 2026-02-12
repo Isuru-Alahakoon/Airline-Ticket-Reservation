@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+
+  background: linear-gradient(to bottom,rgb(191, 191, 191) , rgb(220, 246, 255));
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.content{
+
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.update_airline_header{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.item{
+
+  /* background-color: blue;  */
+ margin: 5px;
+ padding: 5px;
+ height: 40px;
+ 
+}
+
+.item input{
+
+  width: 320px;
+  height: 100%;
+  padding: 0 40px 0 20px;
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+
+}
+.item input:focus{
+
+  border: 1px solid rgb(40, 145, 237);
+  box-shadow: 0 0 3px rgb(40, 145, 237);
+}
+
+.save_btn button{
+  
+
+  width: 100%;
+  padding: 10px 0;
+  /* border: 1 black; */
+  background-color: rgb(79, 132, 255);
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.477);
+  text-align: center;
+
+  
+
+}

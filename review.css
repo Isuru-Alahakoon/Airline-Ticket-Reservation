@@ -1,0 +1,241 @@
+/* ============================================
+   Skyticket – Review page (professional)
+   ============================================ */
+
+:root {
+  --color-bg: #f0f9ff;
+  --color-surface: #ffffff;
+  --color-primary: #0369a1;
+  --color-primary-dark: #075985;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e0f2fe;
+  --color-star: #f59e0b;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --radius: 16px;
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  --transition: 0.25s var(--ease-out);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main {
+  flex: 1;
+}
+
+.review-page {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 7rem; /* nav height + gap */
+  padding-bottom: 2rem;
+}
+
+.review-page_inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ----- Header ----- */
+.review-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.review-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.review-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* ----- Star rating ----- */
+.review-rate {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.review-rate_label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.star-rating {
+  font-size: 2rem;
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.star-rating i {
+  cursor: pointer;
+  color: #e2e8f0;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.star-rating i:hover {
+  color: var(--color-star);
+  transform: scale(1.1);
+}
+
+.star-rating i.selected {
+  color: var(--color-star);
+}
+
+/* ----- Review list ----- */
+.review-list {
+  margin-bottom: 2.5rem;
+}
+
+.review-section_title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+}
+
+.review-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.review-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.review-box:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.review-box_author {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+.review-box_text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* ----- Write review ----- */
+.review-write {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+}
+
+.review-write_lead {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.review-actions {
+  margin-bottom: 1rem;
+}
+
+.addrev {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  line-height: 1.5;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  resize: vertical;
+  background: var(--color-surface);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.addrev::placeholder {
+  color: var(--color-text-muted);
+}
+
+.addrev:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.15);
+}
+
+.submit-section {
+  margin-top: 0.5rem;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn {
+  transition: background var(--transition), transform 0.2s var(--ease-out);
+}
+
+.submit-btn:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 640px) {
+  .review-page_inner {
+    padding: 0 1rem;
+  }
+
+  .review-title {
+    font-size: 1.5rem;
+  }
+
+  .review-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .star-rating {
+    font-size: 1.75rem;
+  }
+}
